@@ -67,8 +67,8 @@ func GetDeviceByName(deviceName string) domain.Device {
 
 func sendToPushover(notification Notification) {
 	_, err := http.PostForm("https://api.pushover.net/1/messages.json", url.Values{
-		"token":   {"aezzhkaptpjuoix7srhgk93btmn6qb"},
-		"user":    {"uigmgw13fjianrzjvin7b4s3uvrtny"},
+		"token":   {""},
+		"user":    {""},
 		"message": {notification.Message},
 	})
 	if err != nil {
